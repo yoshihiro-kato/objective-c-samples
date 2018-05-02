@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "HttpClient.h"
+#import "YKTHttpClient.h"
 
 @interface HttpClientTests : XCTestCase
 
@@ -25,11 +25,12 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    HttpClient *client = [HttpClient new];
-    [client startDownLoad];
+- (void)testGetWithUrlString {
+    YKTHttpClient *client = [YKTHttpClient new];
+    [client getWithUrlString:@"https://www.google.co.jp/"];
+    [client getWithUrlString:@"https://www.google.co.jp/"];
 
-    [NSThread sleepForTimeInterval:10];
+    [NSThread sleepForTimeInterval:1];
 }
 
 @end

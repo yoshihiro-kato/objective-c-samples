@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		18D4239F20922E6D00C07AD1 /* HttpClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D4239520922E6C00C07AD1 /* HttpClient.framework */; };
 		18D423A420922E6D00C07AD1 /* HttpClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D423A320922E6D00C07AD1 /* HttpClientTests.m */; };
-		18D423B12092328500C07AD1 /* HttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 18D423AF2092328500C07AD1 /* HttpClient.h */; };
-		18D423B22092328500C07AD1 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D423B02092328500C07AD1 /* HttpClient.m */; };
+		18D423B12092328500C07AD1 /* YKTHttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 18D423AF2092328500C07AD1 /* YKTHttpClient.h */; };
+		18D423B22092328500C07AD1 /* YKTHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D423B02092328500C07AD1 /* YKTHttpClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +29,8 @@
 		18D4239E20922E6D00C07AD1 /* HttpClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HttpClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D423A320922E6D00C07AD1 /* HttpClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpClientTests.m; sourceTree = "<group>"; };
 		18D423A520922E6D00C07AD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18D423AF2092328500C07AD1 /* HttpClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
-		18D423B02092328500C07AD1 /* HttpClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
+		18D423AF2092328500C07AD1 /* YKTHttpClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKTHttpClient.h; sourceTree = "<group>"; };
+		18D423B02092328500C07AD1 /* YKTHttpClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKTHttpClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				18D4239920922E6D00C07AD1 /* Info.plist */,
-				18D423AF2092328500C07AD1 /* HttpClient.h */,
-				18D423B02092328500C07AD1 /* HttpClient.m */,
+				18D423AF2092328500C07AD1 /* YKTHttpClient.h */,
+				18D423B02092328500C07AD1 /* YKTHttpClient.m */,
 			);
 			path = HttpClient;
 			sourceTree = "<group>";
@@ -96,7 +96,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D423B12092328500C07AD1 /* HttpClient.h in Headers */,
+				18D423B12092328500C07AD1 /* YKTHttpClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D423B22092328500C07AD1 /* HttpClient.m in Sources */,
+				18D423B22092328500C07AD1 /* YKTHttpClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
