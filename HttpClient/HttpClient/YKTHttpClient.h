@@ -11,7 +11,7 @@
 @interface YKTHttpClient : NSObject
 
 // Var
-@property (nonatomic) NSURLSession        *sessionConnect;
+@property (nonatomic) NSURLSession        *urlSession;
 
 - (void)getWithUrlString:(NSString *)urlString;
 

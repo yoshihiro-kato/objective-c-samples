@@ -16,7 +16,7 @@
         NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
         sessionConfig.timeoutIntervalForRequest  =  5;
         sessionConfig.timeoutIntervalForResource =  20;
-        self.sessionConnect = [NSURLSession sessionWithConfiguration: sessionConfig
+        self.urlSession = [NSURLSession sessionWithConfiguration: sessionConfig
                                                             delegate: nil
                                                        delegateQueue: nil];
     }
@@ -33,7 +33,7 @@
     [request setHTTPMethod     :@"GET"];
 
     NSURLSessionDataTask *dataTask
-        = [self.sessionConnect dataTaskWithRequest:request
+        = [self.urlSession dataTaskWithRequest:request
                                  completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                                      NSHTTPURLResponse *httpUrlResponse = (NSHTTPURLResponse *)response;
                                      NSLog(@"Status code: %ld", httpUrlResponse.statusCode);
@@ -50,6 +50,6 @@
 
 -(void) dealloc {
     NSLog(@"dealloc");
-    [self.sessionConnect invalidateAndCancel];
+    [self.urlSession invalidateAndCancel];
 }
 @end
