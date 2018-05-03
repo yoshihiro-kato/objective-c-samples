@@ -48,4 +48,8 @@
     NSLog(@"get end");
 }
 
+-(void) dealloc {
+    NSLog(@"dealloc");
+    [self.sessionConnect invalidateAndCancel];
+}
 @end
